@@ -52,6 +52,12 @@ E tem uma lista imensa de empresas que usam Javascript ou alguma ferramenta que 
 
 Antes da gente encerrar essa parte eu quero fazer um combinado com você. Se você, é uma pessoa que já teve algum contato com o Javascript, preste bastante atenção a essas aulas, pois toda vez que você for criar soluções mais complexas, você vai precisar ter essa base de fundamentos bem sólida. 
 
+| Pontos positivos | Pontos negativos |
+| --- | --- |
+| `uma ótima linguagem para um primeiro contato com a programação e, por consequência, para se estudar lógica de programação` | Pode conter brechas para a execução de ações maliciosas |
+| `Sintaxe acessível` | Pode ser renderizada de maneiras diferentes pelos dispositivos compatíveis, causando problemas de desempenho. |
+| `Grande comunidade ao redor do mundo fazendo a ferramenta evoluir` | Atualizações nem sempre compatíveis com todos os navegadores e sistemas existentes. |
+
 ### 4. O que é NodeJS?
 
 É um interpretador Javascript que não depende do navegador. Ele é formado pelo V8, motor interpretador de Javascript criado pelo Google, e pela libuv, uma biblioteca que deu características de linguagem back-end para o node.
@@ -59,6 +65,17 @@ Antes da gente encerrar essa parte eu quero fazer um combinado com você. Se voc
 Node.js revolucionou a forma de programar em Javascript, pois a linguagem evoluiu de uma forma de dar vida aos elementos no navegador para uma linguagem capaz de criar software para tratamento de dados no backend.
 
 ### 5. Primeiros passos com Javascript
+
+* Javascript no navegador, interação: console, alert e prompt
+    **Console:**
+    Esta função permite que você faça log no console do navegador moderno. Isso ajuda você a depurar seu código facilmente.
+
+    **alert:**
+    Usar o alerta exibe uma caixa de diálogo com a mensagem fornecida. A próxima linha de código não será executada até que a caixa de diálogo seja fechada (clicando no botão OK)
+
+    **Prompt:**
+    O uso do prompt permitirá que você recupere as entradas do usuário.
+    O primeiro parâmetro é o título da caixa de diálogo e o segundo (parâmetro opcional) é o valor padrão da caixa de texto.
 
 * Hello World no terminal do vs code
 * 2 formas de rodar um arquivo .js com node (direto no terminal ou run em um arquivo)
