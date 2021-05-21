@@ -93,22 +93,22 @@ console.log(converteRealDolar(100))
 
 //Utilize a estrutura de repetição for para imprimir no console  conforme instruções: 
 
-// a) números de 1 a 100  
-for (i = 1; i <= 100 ; i++) {
+// a) números de 1 a 50  
+for (i = 1; i <= 50 ; i++) {
     console.log(i)
 }
-// b) quando chegar no número 50 interrompa a instrução e pare o loop 
-for (i = 1; i <= 100 ; i++) {
-    if ( i === 51 ) {
+// b) quando chegar no número 25 interrompa a instrução e pare o loop 
+for (i = 1; i <= 50 ; i++) {
+    if ( i === 26 ) {
         break
     }
     console.log(i)
 }
 
-// c) quando chegar no número 50 pule a instrução|
+// c) quando chegar no número 10 pule a instrução|
 
-for (i = 1; i <= 100 ; i++) {
-    if ( i === 50 ) {
+for (i = 1; i <= 50 ; i++) {
+    if ( i === 10 ) {
         continue
     }
     console.log(i)
@@ -132,6 +132,147 @@ while(x < 100) {
   console.log(x);
 
 }
+
+// Vamos criar uma conta bancária com as 3 operações básicas? rs
+    // a) A conta deverá iniciar com o saldo de 100
+    // b) Deverá ser possível escolher uma operação em forma de string: 'depositar', 'sacar', 'consultar saldo'
+    // c) Deverá ser possível passar 1 número para a operação escolhida
+    // d) Deverá retornar o resultado e imprimir no console o saldo atual
+// |
+
+
+function conta(operacao, valor) {
+    let saldo = 100
+    switch (operacao) {
+        case 'depositar':
+            saldo += valor
+            break
+        case 'sacar':
+            saldo -= valor
+            break
+        case 'consultar saldo':
+            saldo
+            break
+        default:
+            console.log('passe os dados válidos')
+    }
+    return `Seu saldo atual é ${saldo}`
+}
+
+console.log(conta('depositar', 2))
+console.log(conta('sacar', 10))
+console.log(conta('consultar saldo'))
+
+
+
+
+
+
+
+
+
+
+//entregavel
+
+// crie um algoritmo que imprime no console de 10 a 60, iterando a cada 5, exceto para os numeros 35 e 45 que irão ser substituidos pela palavra "PULOU".
+
+let x = 5;
+
+while(x < 60) {
+
+  x += 5;
+  
+  if(x === 35 || x === 45) {
+    console.log("PULOU");
+    continue;
+  }
+
+  console.log(x);
+
+}
+
+// crie um algoritmo que converte dias em horas, quando recebe um número de dias.
+
+function diaParaHora(dias) {
+    let horasNoDia = 24
+    let resultado = dias * horasNoDia
+
+    console.log(`${dias} = ${resultado}`)
+}
+
+diaParaHora(25)
+
+// Crie uma função que recebe 2 parâmetros e retorna o resultado da divisão entre eles. Além disso, informe se esse resultado é par ou ímpar.
+
+function divisao(a,b) {
+    let resultado = a/b
+
+    if (resultado % 2 === 0){
+        console.log(`${resultado} é par.`)
+    } else {
+        console.log(`${resultado} é impar.`)
+    }
+
+    return resultado
+}
+
+divisao(14,2)
+
+// a) números de 1 a 100  
+for (i = 1; i <= 100 ; i++) {
+    console.log(i)
+}
+// b) quando chegar no número 50 interrompa a instrução e pare o loop 
+for (i = 1; i <= 100 ; i++) {
+    if ( i === 51 ) {
+        break
+    }
+    console.log(i)
+}
+
+// c) quando chegar no número 50 pule a instrução|
+
+for (i = 1; i <= 100 ; i++) {
+    if ( i === 50 ) {
+        continue
+    }
+    console.log(i)
+}
+
+
+//5 - Vamos criar uma calculadora com as 4 operações matemáticas básicas? rs
+
+// a) Deverá ser possível escolher uma operação aritimética em forma de string: 'soma', 'multiplicacao', 'divisao' e 'subtracao' 
+// b) Deverá ser possível passar 2 números para a operação escolhida
+// c) Deverá retornar o resultado e imprimir no console
+
+function calculadora(operacao, num1, num2) {
+    let resultado
+    switch (operacao) {
+        case 'soma':
+            resultado = num1 + num2
+            break
+        case 'multiplicacao':
+            resultado = num1 * num2
+            break
+        case 'divisao':
+            resultado = num1 / num2
+            break
+        case 'subtracao':
+            resultado = num1 - num2
+            break
+        default:
+            console.log('passe os dados válidos')
+    }
+    return resultado
+}
+
+console.log(calculadora('soma', 2,5))
+console.log(calculadora('divisao', 10,5))
+console.log(calculadora('multiplicacao', 10,5))
+console.log(calculadora('subtracao', 10,5))
+
+
 
 
 // Para revisao de quarta:
